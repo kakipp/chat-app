@@ -12,11 +12,7 @@
         <% current_user.rooms.each do |room| %>
             <div class="room">
                 <div class="room-name">
-<<<<<<< Updated upstream
-                    <a href="#"><%= room.name %></a>
-=======
                     <%= link_to room.name, room_messages_path(room) %>
->>>>>>> Stashed changes
                 </div>
             </div>
         <% end %>
